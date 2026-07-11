@@ -166,9 +166,67 @@ a { color: inherit; }
 }
 .header-nav .btn { padding: 0.6em 1.3em; font-size: 0.9rem; }
 
-@media (max-width: 640px) {
-  .header-nav a:not(.btn) { display: none; }
+.header-ig {
+  display: inline-flex;
+  color: var(--teal-soft);
+  transition: color 150ms ease, transform 160ms var(--ease-out);
 }
+.header-ig svg { width: 20px; height: 20px; }
+@media (hover: hover) and (pointer: fine) {
+  .header-ig:hover { color: var(--terracotta); }
+}
+.header-ig:active { transform: scale(0.92); }
+
+@media (max-width: 640px) {
+  .header-nav a:not(.btn):not(.header-ig) { display: none; }
+}
+
+/* ============ FLOATING WHATSAPP ============ */
+.wa-float {
+  position: fixed;
+  bottom: 1.4rem;
+  right: 1.4rem;
+  z-index: 900;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 22px rgba(28, 51, 43, 0.28);
+  transition: background-color 200ms ease;
+}
+.wa-float svg { width: 28px; height: 28px; }
+@media (hover: hover) and (pointer: fine) {
+  .wa-float:hover { background: var(--teal-deep); }
+}
+html:not(.anim) .wa-float:active { transform: scale(0.94); }
+/* With Motion: hidden while the hero (with its own CTA) is on screen */
+html.anim .wa-float { opacity: 0; }
+
+/* ============ IMAGE PLACEHOLDERS (boceto) ============ */
+.img-slot {
+  border: 1.5px dashed rgba(40, 72, 61, 0.35);
+  border-radius: 6px;
+  background: rgba(231, 222, 201, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  color: var(--teal-soft);
+  font-family: var(--font-type);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+  text-align: center;
+}
+.img-slot svg { width: 28px; height: 28px; opacity: 0.65; }
+.img-slot--wide { aspect-ratio: 21 / 9; max-width: 680px; margin: 2.6rem auto 0; }
+.img-slot--card { aspect-ratio: 4 / 3; margin-top: 1.3rem; }
 
 /* ============ HERO ============ */
 .hero {
@@ -597,6 +655,9 @@ html:not(.anim) .btn:active { transform: scale(0.97); }
   <nav class="header-nav" aria-label="Main">
     <a href="#treatments">treatments</a>
     <a href="#where">where</a>
+    <a class="header-ig" href="https://www.instagram.com/shaanthawellness/" target="_blank" rel="noopener" aria-label="Instagram @shaanthawellness">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none"/></svg>
+    </a>
     <a class="btn btn-primary" href="https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A)" target="_blank" rel="noopener">Book</a>
   </nav>
 </header>
@@ -659,6 +720,11 @@ html:not(.anim) .btn:active { transform: scale(0.97); }
         and anyone whose body is asking for attention.
       </p>
       <p class="intro-note reveal" style="--reveal-delay: 180ms">every treatment is tailored to you</p>
+
+      <div class="img-slot img-slot--wide reveal" style="--reveal-delay: 240ms" role="img" aria-label="Placeholder: photo of Tabea giving a massage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-5 4 4 3-3 6 6"/></svg>
+        [ photo — tabea at work · wide shot ]
+      </div>
     </div>
   </section>
 
@@ -722,11 +788,19 @@ html:not(.anim) .btn:active { transform: scale(0.97); }
           <h3>at mandala, sagres</h3>
           <p>A calm, beautiful wellness space in the heart of Sagres — shared with yoga, movement and healing practices.</p>
           <span class="type-label">mandala sagres</span>
+          <div class="img-slot img-slot--card" role="img" aria-label="Placeholder: photo of the Mandala studio room">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-5 4 4 3-3 6 6"/></svg>
+            [ photo — the room at mandala ]
+          </div>
         </div>
         <div class="where-card reveal" style="--reveal-delay: 180ms">
           <h3>at your place</h3>
           <p>Staying in an airbnb, villa or guesthouse? The massage table travels. Same treatment, zero effort on your side.</p>
           <span class="type-label">home visits in &amp; around sagres</span>
+          <div class="img-slot img-slot--card" role="img" aria-label="Placeholder: photo of the mobile massage table setup">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-5 4 4 3-3 6 6"/></svg>
+            [ photo — home visit setup ]
+          </div>
         </div>
       </div>
 
@@ -765,6 +839,11 @@ html:not(.anim) .btn:active { transform: scale(0.97); }
     </div>
   </section>
 </main>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="wa-float" href="https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A)" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2Z"/></svg>
+</a>
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
@@ -847,11 +926,18 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 
   /* 4 — buttons: spring press, snappy down / lively release (interruptible) */
   if (typeof press === 'function') {
-    press('.btn', (el) => {
-      animate(el, { scale: 0.965 }, { type: 'spring', stiffness: 700, damping: 40 });
+    press('.btn, .wa-float', (el) => {
+      animate(el, { scale: 0.94 }, { type: 'spring', stiffness: 700, damping: 40 });
       return () => animate(el, { scale: 1 }, { type: 'spring', stiffness: 380, damping: 16 });
     });
   }
+
+  /* 5 — floating WhatsApp: hidden over the hero (it has its own CTA), springs in after */
+  const waFloat = document.querySelector('.wa-float');
+  inView('.hero', () => {
+    animate(waFloat, { opacity: 0, scale: 0.85 }, { duration: 0.2, ease: 'easeOut' });
+    return () => animate(waFloat, { opacity: 1, scale: 1 }, { type: 'spring', stiffness: 280, damping: 20 });
+  }, { amount: 0.25 });
 })();
 </script>
 
