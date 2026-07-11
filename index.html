@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shaanthawellness — Ayurvedic & Sports Massage in Sagres</title>
+<meta name="description" content="Ayurvedic and sports massage in Sagres, Portugal. Warm herbal oils, deep honest bodywork. At Mandala Sagres or in your home. Book via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Karla:wght@400;500;600&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root {
+  --cream: #F5F0E4;
+  --cream-deep: #EDE6D4;
+  --sand: #E7DEC9;
+  --teal: #28483D;
+  --teal-deep: #1C332B;
+  --teal-soft: #3D5F52;
+  --terracotta: #96502F;
+  --ink: #22312B;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Karla", -apple-system, sans-serif;
+  --font-type: "Courier Prime", "Courier New", monospace;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  --w-content: 1080px;
+  --w-narrow: 680px;
+}
+
+/* ============ RESET & BASE ============ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* paper grain — evokes the printed menu */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.35;
+  transform: translateZ(0);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.05'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+::selection { background: var(--teal); color: var(--cream); }
+
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============ TYPE UTILITIES ============ */
+.type-label {
+  font-family: var(--font-type);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-soft);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 4.5vw, 3.1rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--teal);
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.95em 1.9em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 160ms var(--ease-out), background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+  will-change: transform;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--cream);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--teal);
+  border: 1.5px solid rgba(40, 72, 61, 0.4);
+}
+.btn-cream {
+  background: var(--cream);
+  color: var(--teal);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover { background: var(--teal-deep); }
+  .btn-secondary:hover { border-color: var(--teal); background: rgba(40, 72, 61, 0.06); }
+  .btn-cream:hover { background: #fff; }
+}
+
+.btn svg { width: 1.1em; height: 1.1em; }
+
+/* ============ HEADER ============ */
+.site-header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--w-content);
+  margin: 0 auto;
+  padding: 1.6rem 1.5rem;
+}
+
+.header-brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--teal);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.header-nav { display: flex; align-items: center; gap: 1.8rem; }
+.header-nav a:not(.btn) {
+  font-family: var(--font-type);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: var(--teal-soft);
+  transition: color 150ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .header-nav a:not(.btn):hover { color: var(--terracotta); }
+}
+.header-nav .btn { padding: 0.6em 1.3em; font-size: 0.9rem; }
+
+@media (max-width: 640px) {
+  .header-nav a:not(.btn) { display: none; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6.5rem 1.5rem 4rem;
+  position: relative;
+}
+
+.hero-lotus { width: clamp(150px, 22vw, 220px); margin-bottom: 1rem; }
+.hero-lotus path {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* lotus draw-on: initial hidden state; Motion animates strokeDashoffset → 0 */
+html.anim .hero-lotus .draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.hero-wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 7.5vw, 4.6rem);
+  letter-spacing: -0.02em;
+  color: var(--teal);
+  line-height: 1.05;
+}
+
+.hero-tagline {
+  font-family: var(--font-type);
+  font-size: clamp(0.72rem, 1.6vw, 0.88rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-top: 1.1rem;
+}
+
+.hero-lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  color: var(--teal-soft);
+  max-width: 30ch;
+  margin: 1.8rem auto 0;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+/* hero load sequence — hidden until Motion springs them up */
+html.anim .hero-rise { opacity: 0; }
+
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  width: max-content;
+  margin: 0 auto;
+  font-family: var(--font-type);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--teal-soft);
+  text-decoration: none;
+}
+html.anim .hero-scroll-hint { opacity: 0; }
+
+/* ============ MARQUEE ============ */
+.marquee {
+  border-top: 1px solid rgba(40, 72, 61, 0.18);
+  border-bottom: 1px solid rgba(40, 72, 61, 0.18);
+  overflow: hidden;
+  padding: 0.85rem 0;
+  white-space: nowrap;
+}
+.marquee-track {
+  display: inline-flex;
+  gap: 0;
+  animation: marquee 36s linear infinite;
+}
+.marquee span {
+  font-family: var(--font-type);
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: lowercase;
+  color: var(--teal-soft);
+  padding: 0 1.6rem;
+}
+.marquee em { font-style: normal; color: var(--terracotta); }
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* ============ SECTIONS ============ */
+section { padding: clamp(4.5rem, 9vw, 7.5rem) 1.5rem; }
+.section-inner { max-width: var(--w-content); margin: 0 auto; }
+.section-inner-narrow { max-width: var(--w-narrow); margin: 0 auto; }
+
+.section-eyebrow {
+  display: block;
+  margin-bottom: 1.1rem;
+}
+
+/* ---- intro ---- */
+.intro { text-align: center; }
+.intro .section-heading { max-width: 22ch; margin: 0 auto; }
+.intro-note {
+  font-family: var(--font-type);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--teal-soft);
+  margin-top: 1.6rem;
+}
+
+/* ---- treatments (menu-style) ---- */
+.treatments-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.8rem;
+}
+.treatments-all {
+  font-family: var(--font-type);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--terracotta);
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.4rem 2.5rem;
+  align-items: baseline;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(40, 72, 61, 0.18);
+  transition: background-color 250ms ease;
+  position: relative;
+}
+.menu-row:last-of-type { border-bottom: 1px solid rgba(40, 72, 61, 0.18); }
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-row:hover { background: rgba(231, 222, 201, 0.5); }
+}
+
+.menu-name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+  letter-spacing: -0.01em;
+  color: var(--teal);
+  text-transform: lowercase;
+}
+
+.menu-desc {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.02rem;
+  color: var(--teal-soft);
+  max-width: 52ch;
+  grid-column: 1;
+}
+
+.menu-price {
+  font-family: var(--font-type);
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  white-space: nowrap;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu-tag {
+  display: inline-block;
+  font-family: var(--font-type);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--terracotta);
+  padding: 0.32em 0.9em;
+  border-radius: 999px;
+  margin-left: 0.8em;
+  vertical-align: middle;
+  transform: translateY(-0.2em);
+}
+
+.menu-row.is-specialty {
+  background: var(--teal);
+  border-radius: 4px;
+  border-color: transparent;
+  margin: 0 -0.5rem;
+  padding: 2rem 1.5rem;
+}
+.menu-row.is-specialty + .menu-row { border-top-color: transparent; }
+.menu-row.is-specialty .menu-name { color: var(--cream); }
+.menu-row.is-specialty .menu-desc { color: var(--sand); }
+.menu-row.is-specialty .menu-price { color: var(--cream); }
+@media (hover: hover) and (pointer: fine) {
+  .menu-row.is-specialty:hover { background: var(--teal-deep); }
+}
+
+@media (max-width: 560px) {
+  .menu-row { grid-template-columns: 1fr; padding: 1.6rem 0.4rem; }
+  .menu-price { grid-column: 1; grid-row: auto; margin-top: 0.3rem; }
+  .menu-row.is-specialty { margin: 0; padding: 1.6rem 1rem; }
+}
+
+/* ---- recovery pass ---- */
+.pass {
+  background: var(--teal);
+  color: var(--cream);
+  text-align: center;
+}
+.pass .section-heading { color: var(--cream); }
+.pass-price {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 8vw, 5.2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 1.8rem 0 0.4rem;
+}
+.pass-save {
+  font-family: var(--font-type);
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+.pass-desc {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--sand);
+  max-width: 42ch;
+  margin: 1.6rem auto 0;
+}
+.pass .btn { margin-top: 2.2rem; }
+.pass .section-eyebrow { color: var(--sand); }
+
+/* ---- where ---- */
+.where-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  margin-top: 3rem;
+}
+@media (max-width: 720px) {
+  .where-grid { grid-template-columns: 1fr; }
+}
+
+.where-card {
+  border-top: 2px solid var(--teal);
+  padding-top: 1.4rem;
+}
+.where-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--teal);
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+}
+.where-card p {
+  margin-top: 0.7rem;
+  color: var(--teal-soft);
+  max-width: 40ch;
+}
+.where-card .type-label { display: block; margin-top: 1.1rem; color: var(--terracotta); }
+
+.where-hours {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-family: var(--font-type);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: var(--teal-soft);
+}
+.where-hours strong { color: var(--ink); font-weight: 400; }
+
+/* ---- review ---- */
+.review { text-align: center; background: var(--cream-deep); }
+.review-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 1.6rem;
+}
+.review-stars svg { width: 18px; height: 18px; fill: var(--terracotta); }
+.review-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3.4vw, 2rem);
+  line-height: 1.35;
+  color: var(--teal);
+  max-width: 26ch;
+  margin: 0 auto;
+}
+.review-source {
+  margin-top: 1.6rem;
+  font-family: var(--font-type);
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  color: var(--teal-soft);
+}
+
+/* ---- book / footer CTA ---- */
+.book { text-align: center; }
+.book .section-heading { max-width: 18ch; margin-left: auto; margin-right: auto; }
+.book-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--teal-soft);
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+}
+.book .btn { margin-top: 2.2rem; }
+.book-alt {
+  margin-top: 1.5rem;
+  font-family: var(--font-type);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--teal-soft);
+}
+.book-alt a { color: var(--terracotta); text-underline-offset: 3px; }
+
+/* ============ FOOTER ============ */
+.site-footer {
+  background: var(--teal-deep);
+  color: var(--sand);
+  padding: 3.5rem 1.5rem 2.5rem;
+}
+.footer-inner {
+  max-width: var(--w-content);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--cream);
+}
+.footer-brand span {
+  display: block;
+  font-family: var(--font-type);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin-top: 0.5rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-family: var(--font-type);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--sand);
+  transition: color 150ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .footer-links a:hover { color: #fff; }
+}
+.footer-note {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 240, 228, 0.15);
+  font-family: var(--font-type);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: rgba(231, 222, 201, 0.6);
+}
+
+/* ============ SCROLL REVEAL (Motion drives it; CSS only sets the hidden start) ============ */
+html.anim .reveal { opacity: 0; }
+
+/* When Motion runs, it owns .btn transforms (spring press) — drop the CSS transform path */
+html.anim .btn { transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease; }
+html:not(.anim) .btn:active { transform: scale(0.97); }
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .btn { transition: background-color 200ms ease, color 200ms ease; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <a class="header-brand" href="#">shaanthawellness</a>
+  <nav class="header-nav" aria-label="Main">
+    <a href="#treatments">treatments</a>
+    <a href="#where">where</a>
+    <a class="btn btn-primary" href="https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A)" target="_blank" rel="noopener">Book</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<main>
+  <section class="hero" aria-label="Intro">
+    <!-- hand-drawn lotus, drawn in on load -->
+    <svg class="hero-lotus" viewBox="0 0 220 132" role="img" aria-label="Shaantha lotus emblem">
+      <path class="draw" pathLength="1" d="M110 14 C 97 38, 95 70, 110 94 C 125 70, 123 38, 110 14 Z"/>
+      <path class="draw" pathLength="1" d="M110 94 C 93 83, 81 62, 83 38 C 64 55, 71 85, 110 94 Z"/>
+      <path class="draw" pathLength="1" d="M110 94 C 127 83, 139 62, 137 38 C 156 55, 149 85, 110 94 Z"/>
+      <path class="draw" pathLength="1" d="M110 94 C 83 91, 61 79, 51 58 C 41 83, 69 98, 110 94 Z"/>
+      <path class="draw" pathLength="1" d="M110 94 C 137 91, 159 79, 169 58 C 179 83, 151 98, 110 94 Z"/>
+      <path class="draw" pathLength="1" d="M64 106 Q 110 119, 156 106"/>
+      <path class="draw" pathLength="1" d="M80 115 Q 110 123, 140 115"/>
+    </svg>
+
+    <h1 class="hero-wordmark hero-rise">shaanthawellness</h1>
+    <p class="hero-tagline hero-rise">Ayurvedic massage &amp; recovery — Sagres</p>
+    <p class="hero-lead hero-rise">Warm herbal oils. Deep, honest bodywork. One hour that resets you.</p>
+
+    <div class="hero-actions hero-rise">
+      <a class="btn btn-primary" href="https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A)" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2Z"/></svg>
+        Book on WhatsApp
+      </a>
+      <a class="btn btn-secondary" href="#treatments">See treatments</a>
+    </div>
+
+    <a class="hero-scroll-hint" href="#intro" aria-hidden="true">scroll ↓</a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>abhyanga</span><span>·</span>
+      <span>sports massage</span><span>·</span>
+      <span><em>ayurvedic &amp; sports combination</em></span><span>·</span>
+      <span>head, neck &amp; face</span><span>·</span>
+      <span>mandala sagres</span><span>·</span>
+      <span>home visits</span><span>·</span>
+      <span>abhyanga</span><span>·</span>
+      <span>sports massage</span><span>·</span>
+      <span><em>ayurvedic &amp; sports combination</em></span><span>·</span>
+      <span>head, neck &amp; face</span><span>·</span>
+      <span>mandala sagres</span><span>·</span>
+      <span>home visits</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro" id="intro">
+    <div class="section-inner-narrow">
+      <span class="type-label section-eyebrow reveal">the practice</span>
+      <h2 class="section-heading reveal" style="--reveal-delay: 60ms">Where ayurveda meets the Atlantic.</h2>
+      <p class="reveal" style="--reveal-delay: 120ms; margin-top: 1.6rem; color: var(--teal-soft); max-width: 52ch; margin-left: auto; margin-right: auto;">
+        Shaantha is the massage practice of Tabea — combining traditional ayurvedic
+        bodywork with deep, targeted muscle work. For surfers, hikers, travellers
+        and anyone whose body is asking for attention.
+      </p>
+      <p class="intro-note reveal" style="--reveal-delay: 180ms">every treatment is tailored to you</p>
+    </div>
+  </section>
+
+  <!-- ============ TREATMENTS ============ -->
+  <section id="treatments">
+    <div class="section-inner" style="max-width: 880px;">
+      <div class="treatments-head">
+        <div>
+          <span class="type-label section-eyebrow reveal">the menu</span>
+          <h2 class="section-heading reveal" style="--reveal-delay: 60ms">treatments</h2>
+        </div>
+        <p class="treatments-all reveal" style="--reveal-delay: 120ms">every treatment · 60 mins — 50€</p>
+      </div>
+
+      <article class="menu-row reveal">
+        <h3 class="menu-name">abhyanga</h3>
+        <p class="menu-price">60 mins — 50€</p>
+        <p class="menu-desc">Traditional ayurvedic massage. Warm herbal oils that support circulation, nourish the skin, calm the nervous system and release muscular tension.</p>
+      </article>
+
+      <article class="menu-row reveal" style="--reveal-delay: 60ms">
+        <h3 class="menu-name">sports massage</h3>
+        <p class="menu-price">60 mins — 50€</p>
+        <p class="menu-desc">Deep-tissue work to release muscle tension, speed up recovery and support performance.</p>
+      </article>
+
+      <article class="menu-row is-specialty reveal" style="--reveal-delay: 120ms">
+        <h3 class="menu-name">ayurvedic &amp; sports<span class="menu-tag">the shaantha specialty</span></h3>
+        <p class="menu-price">60 mins — 50€</p>
+        <p class="menu-desc">The best of both worlds — tissue warmed up with ayurvedic oils, combined with deeper muscle work exactly where you need it.</p>
+      </article>
+
+      <article class="menu-row reveal" style="--reveal-delay: 180ms">
+        <h3 class="menu-name">head, neck &amp; face</h3>
+        <p class="menu-price">60 mins — 50€</p>
+        <p class="menu-desc">Targeted work on the areas that hold the most tension — with optional herbal steam, face scrub or face mask.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ RECOVERY PASS ============ -->
+  <section class="pass">
+    <div class="section-inner-narrow">
+      <span class="type-label section-eyebrow reveal">recovery pass</span>
+      <h2 class="section-heading reveal" style="--reveal-delay: 60ms">Four massages.<br>Three months.</h2>
+      <p class="pass-price reveal" style="--reveal-delay: 120ms">150€</p>
+      <p class="pass-save reveal" style="--reveal-delay: 160ms">you save 50€</p>
+      <p class="pass-desc reveal" style="--reveal-delay: 200ms">Any four 60-minute treatments, whenever you need them. For the ones who live here, train here, or keep coming back.</p>
+      <a class="btn btn-cream reveal" style="--reveal-delay: 240ms" href="https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Recovery%20Pass%20%3A)" target="_blank" rel="noopener">Get the pass</a>
+    </div>
+  </section>
+
+  <!-- ============ WHERE ============ -->
+  <section id="where">
+    <div class="section-inner" style="max-width: 880px;">
+      <span class="type-label section-eyebrow reveal">where &amp; when</span>
+      <h2 class="section-heading reveal" style="--reveal-delay: 60ms">Come to us, or we come to you.</h2>
+
+      <div class="where-grid">
+        <div class="where-card reveal" style="--reveal-delay: 120ms">
+          <h3>at mandala, sagres</h3>
+          <p>A calm, beautiful wellness space in the heart of Sagres — shared with yoga, movement and healing practices.</p>
+          <span class="type-label">mandala sagres</span>
+        </div>
+        <div class="where-card reveal" style="--reveal-delay: 180ms">
+          <h3>at your place</h3>
+          <p>Staying in an airbnb, villa or guesthouse? The massage table travels. Same treatment, zero effort on your side.</p>
+          <span class="type-label">home visits in &amp; around sagres</span>
+        </div>
+      </div>
+
+      <p class="where-hours reveal" style="--reveal-delay: 240ms">open <strong>every day · 8:00 — 20:00</strong> · by appointment</p>
+    </div>
+  </section>
+
+  <!-- ============ REVIEW ============ -->
+  <section class="review">
+    <div class="section-inner-narrow">
+      <div class="review-stars reveal" aria-label="5.0 stars on Google">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>
+      </div>
+      <blockquote class="review-quote reveal" style="--reveal-delay: 60ms">
+        “Great massage in Sagres — perfect after a surf session.”
+      </blockquote>
+      <p class="review-source reveal" style="--reveal-delay: 120ms">5,0 · google reviews</p>
+    </div>
+  </section>
+
+  <!-- ============ BOOK ============ -->
+  <section class="book">
+    <div class="section-inner-narrow">
+      <span class="type-label section-eyebrow reveal">bookings</span>
+      <h2 class="section-heading reveal" style="--reveal-delay: 60ms">Your body already said yes.</h2>
+      <p class="book-sub reveal" style="--reveal-delay: 120ms">Send a message — we’ll find a time that works.</p>
+      <a class="btn btn-primary reveal" style="--reveal-delay: 180ms" href="https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A)" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2Z"/></svg>
+        WhatsApp +351 938 132 927
+      </a>
+      <p class="book-alt reveal" style="--reveal-delay: 240ms">or find us on <a href="https://www.instagram.com/shaanthawellness/" target="_blank" rel="noopener">instagram</a></p>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      shaanthawellness
+      <span>ayurvedic massage &amp; recovery · sagres, portugal</span>
+    </div>
+    <nav class="footer-links" aria-label="Contact">
+      <a href="https://wa.me/351938132927" target="_blank" rel="noopener">whatsapp: +351 938 132 927</a>
+      <a href="https://www.instagram.com/shaanthawellness/" target="_blank" rel="noopener">instagram: @shaanthawellness</a>
+      <a href="https://maps.google.com/maps?cid=0x62bd4a4eabf801c9:0x292733ea34f0e41f" target="_blank" rel="noopener">location: mandala, sagres</a>
+    </nav>
+    <p class="footer-note">© 2026 shaantha wellness — every treatment tailored to you</p>
+  </div>
+</footer>
+
+<script>
+// Gate: only hide animatable elements when motion is allowed (class added pre-paint)
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('anim');
+}
+</script>
+
+<script type="module">
+// Animations powered by Motion (framer-motion vanilla build)
+(async () => {
+  const root = document.documentElement;
+  if (!root.classList.contains('anim')) return;
+
+  let M;
+  try {
+    M = await import('https://cdn.jsdelivr.net/npm/motion@12/+esm');
+  } catch (e) {
+    root.classList.remove('anim'); // offline / CDN down → show everything statically
+    return;
+  }
+  const { animate, inView, stagger, scroll, press } = M;
+  const EASE = [0.23, 1, 0.32, 1];
+
+  /* If opened in a background tab, hold the hero intro until the page is visible */
+  if (document.visibilityState === 'hidden') {
+    await new Promise((res) => {
+      document.addEventListener('visibilitychange', function onVis() {
+        if (document.visibilityState === 'visible') {
+          document.removeEventListener('visibilitychange', onVis);
+          res();
+        }
+      });
+    });
+  }
+
+  /* 1 — hero: the lotus draws itself, then content rises on springs */
+  animate('.hero-lotus .draw',
+    { strokeDashoffset: [1, 0] },
+    { duration: 1.1, delay: stagger(0.12, { startDelay: 0.08 }), ease: EASE });
+
+  animate('.hero-rise',
+    { opacity: [0, 1], y: [18, 0] },
+    { type: 'spring', stiffness: 110, damping: 16, delay: stagger(0.13, { startDelay: 0.35 }) });
+
+  animate('.hero-scroll-hint', { opacity: [0, 1] }, { duration: 0.7, delay: 1.4, ease: 'easeOut' });
+
+  /* 2 — scroll-linked parallax: lotus drifts up and fades as you leave the hero */
+  const hero = document.querySelector('.hero');
+  scroll(
+    animate('.hero-lotus', { y: [0, -70], opacity: [1, 0.15] }, { ease: 'linear' }),
+    { target: hero, offset: ['start start', 'end 30%'] }
+  );
+
+  /* 3 — scroll reveals: interruptible springs, per-element stagger via --reveal-delay */
+  inView('.reveal', (el) => {
+    if (el.dataset.revealed) return;
+    el.dataset.revealed = '1';
+    const delay = (parseFloat(getComputedStyle(el).getPropertyValue('--reveal-delay')) || 0) / 1000;
+    animate(el,
+      { opacity: [0, 1], y: [20, 0] },
+      { type: 'spring', stiffness: 90, damping: 18, delay });
+  }, { margin: '0px 0px -60px 0px' });
+
+  /* 4 — buttons: spring press, snappy down / lively release (interruptible) */
+  if (typeof press === 'function') {
+    press('.btn', (el) => {
+      animate(el, { scale: 0.965 }, { type: 'spring', stiffness: 700, damping: 40 });
+      return () => animate(el, { scale: 1 }, { type: 'spring', stiffness: 380, damping: 16 });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
