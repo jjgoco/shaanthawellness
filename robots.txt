@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /shaantha-v1.html
+Disallow: /shaantha-v3.html
+Disallow: /template-work.html
+
+Sitemap: https://shaanthawellness.com/sitemap.xml
