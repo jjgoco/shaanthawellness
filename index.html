@@ -488,13 +488,16 @@ textarea.input { min-height: 90px; resize: vertical; }
     #faq summary:hover { color: var(--color-accent-700); background: color-mix(in srgb, var(--color-accent) 7%, transparent); }
   </style>
   <style>
-    /* Hover states — replaces the runtime's generated pseudo-classes. Same specificity
-       as before (plain rule, no !important), so behaviour is identical to the React version. */
+    /* Hover states — replaces the runtime's generated pseudo-classes.
+       !important only where the element sets that same property inline: without it the
+       inline style wins and the hover silently does nothing (which is what happened with
+       the old runtime, since its generated rules had no !important either). Properties
+       that are not set inline need no override. */
     [data-hv="lift"]:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    [data-hv="accent"]:hover { color: var(--color-accent-700); }
-    [data-hv="bg2"]:hover { background: var(--color-accent-2-300); }
-    [data-hv="btn"]:hover { background: var(--color-accent-800); box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    [data-hv="fab"]:hover { background: var(--color-accent-2-700); transform: translateY(-2px); }
+    [data-hv="accent"]:hover { color: var(--color-accent-700) !important; }
+    [data-hv="bg2"]:hover { background: var(--color-accent-2-300) !important; }
+    [data-hv="btn"]:hover { background: var(--color-accent-800) !important; box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    [data-hv="fab"]:hover { background: var(--color-accent-2-700) !important; transform: translateY(-2px); }
   </style>
 </head>
 <body>
