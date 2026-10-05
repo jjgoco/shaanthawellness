@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "ea296005b9c9add8991d1f6e4b421185628e98f1",
+  "site": "https://shaanthawellness.com/",
+  "budgets": {
+    "ownJsGzipBytes": 10000,
+    "cssGzipBytes": 15000
+  },
+  "publicAliases": [
+    "photos/hero.jpg",
+    "photos/tabea.jpg",
+    "photos/logo.svg"
+  ],
+  "pages": [
+    {
+      "file": "index.html",
+      "route": "/",
+      "title": "Ayurvedic & Sports Massage in Sagres | Shaantha Wellness",
+      "canonical": "https://shaanthawellness.com/",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "Ayurvedic & sports massage in Sagres, Portugal — warm-oil abhyanga, deep-tissue recovery and home visits. 60 min · 50€. Book on WhatsApp.",
+        "property:og:type": "website",
+        "property:og:url": "https://shaanthawellness.com/",
+        "property:og:site_name": "Shaantha Wellness",
+        "property:og:title": "Shaantha Wellness — Ayurvedic & Sports Massage, Sagres",
+        "property:og:description": "Warm-oil ayurvedic massage, deep-tissue sports recovery and home visits in Sagres. 60 min · 50€ — book on WhatsApp.",
+        "property:og:image": "https://shaanthawellness.com/photos/hero.jpg",
+        "property:og:image:alt": "Warm oil massage in progress",
+        "name:twitter:card": "summary_large_image",
+        "name:twitter:title": "Shaantha Wellness — Ayurvedic & Sports Massage, Sagres",
+        "name:twitter:description": "Warm-oil ayurvedic massage, deep-tissue sports recovery and home visits in Sagres. 60 min · 50€ — book on WhatsApp.",
+        "name:twitter:image": "https://shaanthawellness.com/photos/hero.jpg"
+      },
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HealthAndBeautyBusiness",
+          "@id": "https://shaanthawellness.com/#business",
+          "name": "Shaantha Wellness",
+          "description": "Ayurvedic & sports massage in Sagres, Portugal — at Mandala Sagres or as home visits. Warm-oil abhyanga, deep-tissue recovery and combination treatments.",
+          "url": "https://shaanthawellness.com/",
+          "image": "https://shaanthawellness.com/photos/hero.jpg",
+          "logo": "https://shaanthawellness.com/photos/logo.svg",
+          "telephone": "+351938132927",
+          "priceRange": "€€",
+          "currenciesAccepted": "EUR",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. da Botelha",
+            "addressLocality": "Sagres",
+            "postalCode": "8650-359",
+            "addressRegion": "Faro",
+            "addressCountry": "PT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 37.01881,
+            "longitude": -8.94406
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Sagres"
+            },
+            {
+              "@type": "City",
+              "name": "Vila do Bispo"
+            },
+            {
+              "@type": "City",
+              "name": "Raposeira"
+            },
+            {
+              "@type": "City",
+              "name": "Figueira"
+            },
+            {
+              "@type": "City",
+              "name": "Budens"
+            },
+            {
+              "@type": "City",
+              "name": "Salema"
+            },
+            {
+              "@type": "City",
+              "name": "Burgau"
+            },
+            {
+              "@type": "City",
+              "name": "Praia da Luz"
+            },
+            {
+              "@type": "City",
+              "name": "Lagos"
+            }
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          "sameAs": [
+            "https://www.instagram.com/shaanthawellness/",
+            "https://www.tripadvisor.es/Attraction_Review-g189121-d34551615-Reviews-Shaantha_Ayurvedic_Massage_Wellness_Sagres-Sagres_Faro_District_Algarve.html"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Treatments",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Abhyanga — Ayurvedic warm oil massage",
+                  "description": "Traditional ayurvedic massage with warm herbal oils. 60 minutes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Sports massage",
+                  "description": "Deep-tissue work to release muscle tension and speed up recovery. 60 minutes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ayurvedic & sports combination massage",
+                  "description": "The Shaantha specialty — warm ayurvedic oils combined with deep muscle work. 60 minutes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Head, neck & face massage",
+                  "description": "Targeted upper-body work with optional herbal steam, face scrub or face mask. 60 minutes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "EUR",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Recovery Pass — 4 × 60 min",
+                  "description": "Four 60-minute treatments, any combination, valid for three months."
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "h1": [
+        "Ayurvedic & Sports Massage in Sagres"
+      ],
+      "preservedIds": [
+        "menu-open-btn",
+        "mobile-menu",
+        "menu-close-btn",
+        "treatments",
+        "surf",
+        "pass",
+        "visit",
+        "faq",
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://www.instagram.com/shaanthawellness/",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A%29",
+        "https://shaanthawellness.com/index.html#treatments",
+        "https://shaanthawellness.com/index.html#surf",
+        "https://shaanthawellness.com/index.html#pass",
+        "https://shaanthawellness.com/index.html#visit",
+        "https://shaanthawellness.com/index.html#faq",
+        "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+        "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Abhyanga%20treatment%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20a%20Sports%20massage%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Ayurvedic%20%26%20Sports%20combination%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Head%2C%20neck%20%26%20face%20treatment%20%3A%29",
+        "https://maps.google.com/maps?cid=0x62bd4a4eabf801c9:0x292733ea34f0e41f",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20surf%20recovery%20massage%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Recovery%20Pass%20%3A%29",
+        "https://shaanthawellness.com/what-is-abhyanga.html",
+        "https://shaanthawellness.com/about.html",
+        "https://wa.me/351938132927?text=Hi%20Tabea!%20I%27d%20like%20to%20book%20a%20treatment%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%20read%20the%20reviews%20and%20I%27d%20like%20to%20book%20a%20massage%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20at%20Mandala%20%3A%29",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20home%20visit%20massage%20%3A%29",
+        "https://wa.me/351938132927",
+        "https://wa.me/351938132927?text=Hi!%20I%20have%20a%20question%20%3A%29",
+        "https://shaanthawellness.com/privacy.html"
+      ],
+      "photoCount": 9,
+      "preservedParagraphs": [
+        "ayurvedic treatments with warm herbal oils and deep tissue sports massages for anyone looking for a well-deserved moment of relaxation.",
+        "Traditional ayurvedic massage. Warm herbal oils that support circulation, nourish the skin, calm the nervous system and release muscular tension.",
+        "60 mins — 50€ · book ↗",
+        "Deep-tissue work to release muscle tension, speed up recovery and support performance.",
+        "60 mins — 50€ · book ↗",
+        "The best of both worlds — tissue warmed up with ayurvedic oils, combined with deeper muscle work exactly where you need it.",
+        "60 mins — 50€ · book ↗",
+        "Targeted work where you hold the most tension — with optional herbal steam, face scrub or face mask.",
+        "60 mins — 50€ · book ↗",
+        "Sagres' breaks are why most visitors are here — and why shoulders, necks and lower backs take a beating. Paddling out, popping up, hours in the water: it adds up.",
+        "The sports massage and the ayurvedic & sports combination are built for exactly that — deep-tissue work where surfing loads the body, with warm oils to help you get back in the water sooner. Book before your next session to loosen up, or straight after to recover.",
+        "Any 60-minute treatments, valid for three months, whenever you need them. Best deal for regular clients.",
+        "Shaantha is the massage practice of Tabea — traditional ayurvedic bodywork combined with deep, targeted muscle work. Every treatment is tailored to you: where your body holds tension, how you train, how you rest. More about Tabea , who works in five languages.",
+        "“I felt very comfortable with Tabea and I could really feel the aftereffects of the treatment (in a good way!) She was gentle and present with me and helped me feel safe and calm.”",
+        "Jasmine Flower · read on google ↗",
+        "“It was absolutely amazing :) Tabea is such a kind soul and the massage was an amazing add-on to my vacay in Sagres — I lovedddd it!”",
+        "Aliza Walewski · read on google ↗",
+        "“Amazing and super relaxing massage! She really listened and worked with me to actually tackle the areas that were giving me trouble.”",
+        "A. B. (Alina) · read on google ↗",
+        "A calm, beautiful wellness space in the heart of Sagres — shared with yoga, movement and healing practices.",
+        "Staying in an airbnb, villa or guesthouse? The massage table travels — home visits in and around Sagres. Same treatment, zero effort on your side.",
+        "Send a message on WhatsApp (+351 938 132 927) — we’ll find a time that works. Open every day, 8:00–20:00, by appointment.",
+        "At Mandala, a wellness space in the heart of Sagres — or at your place. Home visits cover Sagres and around; the massage table travels.",
+        "If you’re not sure, start with the ayurvedic & sports combination — warm oils to open the tissue, deeper work exactly where you need it. Every treatment is tailored to you anyway.",
+        "Yes — the sports massage and the ayurvedic & sports combination are exactly for that. Deep-tissue work on the shoulders, neck and lower back, right where surfing loads the body.",
+        "Nothing special — just arrive as you are. Ayurvedic treatments use warm herbal oil, so plan to shower afterwards rather than rush to dinner.",
+        "150€ for any four 60-minute treatments within three months — you save 50€. Mix and match treatments however you like.",
+        "Send a message — we’ll find a time that works. Open every day, 8:00 — 20:00, by appointment."
+      ]
+    },
+    {
+      "file": "about.html",
+      "route": "/about.html",
+      "title": "About Tabea — Massage Therapist in Sagres | Shaantha",
+      "canonical": "https://shaanthawellness.com/about.html",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "Tabea is the therapist behind Shaantha Wellness in Sagres: trained in both ayurvedic and sports massage, working at Mandala or as a home visit, in five languages.",
+        "property:og:type": "profile",
+        "property:og:url": "https://shaanthawellness.com/about.html",
+        "property:og:site_name": "Shaantha Wellness",
+        "property:og:title": "About Tabea — Massage Therapist in Sagres",
+        "property:og:description": "Trained in both ayurvedic and sports massage. At Mandala Sagres or as a home visit — in German, English, Spanish, French and Portuguese.",
+        "property:og:image": "https://shaanthawellness.com/photos/tabea.jpg",
+        "property:og:image:alt": "Tabea, preparing warm oil for a treatment",
+        "name:twitter:card": "summary_large_image",
+        "name:twitter:title": "About Tabea — Massage Therapist in Sagres",
+        "name:twitter:description": "Trained in both ayurvedic and sports massage. At Mandala Sagres or as a home visit — in German, English, Spanish, French and Portuguese.",
+        "name:twitter:image": "https://shaanthawellness.com/photos/tabea.jpg"
+      },
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Shaantha Wellness",
+              "item": "https://shaanthawellness.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Tabea"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Tabea",
+          "jobTitle": "Massage therapist",
+          "description": "Massage therapist in Sagres, Portugal, trained in traditional ayurvedic massage and in sports and deep-tissue massage.",
+          "image": "https://shaanthawellness.com/photos/tabea.jpg",
+          "url": "https://shaanthawellness.com/about.html",
+          "knowsLanguage": [
+            "de",
+            "en",
+            "es",
+            "fr",
+            "pt"
+          ],
+          "knowsAbout": [
+            "Ayurvedic massage",
+            "Abhyanga",
+            "Sports massage",
+            "Deep tissue massage"
+          ],
+          "worksFor": {
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://shaanthawellness.com/#business",
+            "name": "Shaantha Wellness"
+          },
+          "workLocation": {
+            "@type": "Place",
+            "name": "Sagres, Portugal",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sagres",
+              "postalCode": "8650-359",
+              "addressRegion": "Faro",
+              "addressCountry": "PT"
+            }
+          }
+        }
+      ],
+      "h1": [
+        "About Tabea, massage therapist in Sagres"
+      ],
+      "preservedIds": [
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://shaanthawellness.com/index.html",
+        "https://shaanthawellness.com/index.html#visit",
+        "https://shaanthawellness.com/index.html#treatments",
+        "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+        "https://shaanthawellness.com/index.html#pass",
+        "https://wa.me/351938132927?text=Hi%20Tabea!%20I%27d%20like%20to%20book%20a%20treatment%20%3A%29",
+        "https://shaanthawellness.com/what-is-abhyanga.html",
+        "https://wa.me/351938132927",
+        "https://www.instagram.com/shaanthawellness/",
+        "https://shaanthawellness.com/privacy.html"
+      ],
+      "photoCount": 0,
+      "mainTextSha256": "1a4a39e68690ec2eaa4db345ad0c7e9523febbf0b9f74b18ca8488dff6978925"
+    },
+    {
+      "file": "what-is-abhyanga.html",
+      "route": "/what-is-abhyanga.html",
+      "title": "What Is Abhyanga? Ayurvedic Warm-Oil Massage | Shaantha",
+      "canonical": "https://shaanthawellness.com/what-is-abhyanga.html",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "Abhyanga is the traditional ayurvedic warm-oil massage — what it is, what it's for, and what to expect in a 60-minute session in Sagres, Portugal.",
+        "property:og:type": "article",
+        "property:og:url": "https://shaanthawellness.com/what-is-abhyanga.html",
+        "property:og:site_name": "Shaantha Wellness",
+        "property:og:title": "What Is Abhyanga? Ayurvedic Warm Oil Massage Explained",
+        "property:og:description": "The traditional ayurvedic warm-oil massage — what it is, what it's for, and what to expect in a 60-minute session in Sagres, Portugal.",
+        "property:og:image": "https://shaanthawellness.com/photos/hero.jpg",
+        "name:twitter:card": "summary_large_image",
+        "name:twitter:title": "What Is Abhyanga? Ayurvedic Warm Oil Massage Explained",
+        "name:twitter:description": "The traditional ayurvedic warm-oil massage — what it is, what it's for, and what to expect in a 60-minute session in Sagres, Portugal.",
+        "name:twitter:image": "https://shaanthawellness.com/photos/hero.jpg"
+      },
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Shaantha Wellness",
+              "item": "https://shaanthawellness.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "What is abhyanga?"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "What Is Abhyanga? Ayurvedic Warm Oil Massage Explained",
+          "description": "Abhyanga is the traditional ayurvedic warm-oil massage — what it is, what it's for, and what to expect in a 60-minute session in Sagres, Portugal.",
+          "image": "https://shaanthawellness.com/photos/hero.jpg",
+          "author": {
+            "@type": "Person",
+            "name": "Tabea"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Shaantha Wellness",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://shaanthawellness.com/photos/logo.svg"
+            }
+          },
+          "mainEntityOfPage": "https://shaanthawellness.com/what-is-abhyanga.html",
+          "datePublished": "2026-07-19"
+        }
+      ],
+      "h1": [
+        "What is abhyanga?"
+      ],
+      "preservedIds": [
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://shaanthawellness.com/index.html",
+        "https://shaanthawellness.com/index.html#visit",
+        "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+        "https://shaanthawellness.com/index.html#treatments",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20an%20Abhyanga%20massage%20%3A%29",
+        "https://shaanthawellness.com/about.html",
+        "https://wa.me/351938132927",
+        "https://www.instagram.com/shaanthawellness/",
+        "https://shaanthawellness.com/privacy.html"
+      ],
+      "photoCount": 0,
+      "mainTextSha256": "d02ec1d714b191072b95594c08c3d2f11da7c92da8a1d115c69ae8969a0d4bc7"
+    },
+    {
+      "file": "ayurvedic-vs-sports-massage.html",
+      "route": "/ayurvedic-vs-sports-massage.html",
+      "title": "Ayurvedic vs Sports Massage: Which to Book? | Shaantha",
+      "canonical": "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "Ayurvedic (abhyanga) and sports massage solve different problems. Here's how they compare, and how to choose — with a combination option in Sagres, Portugal.",
+        "property:og:type": "article",
+        "property:og:url": "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+        "property:og:site_name": "Shaantha Wellness",
+        "property:og:title": "Ayurvedic vs. Sports Massage: Which Should You Book?",
+        "property:og:description": "Ayurvedic (abhyanga) and sports massage solve different problems. Here's how they compare, and how to choose.",
+        "property:og:image": "https://shaanthawellness.com/photos/hero.jpg",
+        "name:twitter:card": "summary_large_image",
+        "name:twitter:title": "Ayurvedic vs. Sports Massage: Which Should You Book?",
+        "name:twitter:description": "Ayurvedic (abhyanga) and sports massage solve different problems. Here's how they compare, and how to choose.",
+        "name:twitter:image": "https://shaanthawellness.com/photos/hero.jpg"
+      },
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Shaantha Wellness",
+              "item": "https://shaanthawellness.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Ayurvedic vs sports massage"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Ayurvedic vs. Sports Massage: Which Should You Book?",
+          "description": "Ayurvedic (abhyanga) and sports massage solve different problems. Here's how they compare, and how to choose.",
+          "image": "https://shaanthawellness.com/photos/hero.jpg",
+          "author": {
+            "@type": "Person",
+            "name": "Tabea"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Shaantha Wellness",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://shaanthawellness.com/photos/logo.svg"
+            }
+          },
+          "mainEntityOfPage": "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+          "datePublished": "2026-07-19"
+        }
+      ],
+      "h1": [
+        "Ayurvedic vs. sports massage: which one do you need?"
+      ],
+      "preservedIds": [
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://shaanthawellness.com/index.html",
+        "https://shaanthawellness.com/what-is-abhyanga.html",
+        "https://shaanthawellness.com/index.html#surf",
+        "https://shaanthawellness.com/index.html#treatments",
+        "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20massage%20%3A%29",
+        "https://shaanthawellness.com/about.html",
+        "https://wa.me/351938132927",
+        "https://www.instagram.com/shaanthawellness/",
+        "https://shaanthawellness.com/privacy.html"
+      ],
+      "photoCount": 0,
+      "mainTextSha256": "dd98f14898b58a6a4d8ca57feb1b701da6ec44c2e32e032c5d8a1a9cc2a4bfbc"
+    },
+    {
+      "file": "privacy.html",
+      "route": "/privacy.html",
+      "title": "Privacy Policy | Shaantha Wellness",
+      "canonical": "https://shaanthawellness.com/privacy.html",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "What data shaanthawellness.com collects, why, and how to control it.",
+        "name:robots": "noindex"
+      },
+      "jsonld": [],
+      "h1": [
+        "Privacy policy"
+      ],
+      "preservedIds": [
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://shaanthawellness.com/index.html",
+        "https://wa.me/351938132927",
+        "https://wa.me/351938132927?text=Hi!%20I%20have%20a%20question%20about%20the%20privacy%20policy",
+        "https://www.instagram.com/shaanthawellness/"
+      ],
+      "photoCount": 0
+    }
+  ],
+  "sitemap": [
+    "https://shaanthawellness.com/",
+    "https://shaanthawellness.com/about.html",
+    "https://shaanthawellness.com/what-is-abhyanga.html",
+    "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html"
+  ],
+  "robots": "User-agent: *\nAllow: /\n\nSitemap: https://shaanthawellness.com/sitemap.xml"
+}

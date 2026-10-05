@@ -1,0 +1,10 @@
+---
+import { responsiveImage } from '../lib/images.js';
+const { name, sizes, width, height, ...attributes } = Astro.props;
+const image = await responsiveImage(name);
+---
+<picture style="display: contents;">
+  <source type="image/avif" srcset={image.avifSrcset} sizes={sizes} />
+  <source type="image/webp" srcset={image.webpSrcset} sizes={sizes} />
+  <img src={image.fallback} srcset={image.webpSrcset} sizes={sizes} width={width} height={height} decoding="async" {...attributes} />
+</picture>

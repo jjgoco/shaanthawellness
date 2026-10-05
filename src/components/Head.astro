@@ -1,0 +1,19 @@
+---
+import pages from '../data/pages.json';
+import { responsiveImage, heroSizes } from '../lib/images.js';
+const { page } = Astro.props;
+const metadata = pages[page];
+if (!metadata) throw new Error(`Unknown page: ${page}`);
+const hero = page === 'index' ? await responsiveImage('hero') : null;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{metadata.metas.map(meta => <meta {...meta} />)}
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preload" as="font" href="/assets/fonts/cormorant-garamond-latin.woff2" type="font/woff2" crossorigin="anonymous" />
+{hero && <link rel="preload" as="image" type="image/avif" imagesrcset={hero.avifSrcset} imagesizes={heroSizes} fetchpriority="high" />}
+<title>{metadata.title}</title>
+<link rel="canonical" href={metadata.canonical} />
+{metadata.jsonld.map(data => <script type="application/ld+json" set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />)}

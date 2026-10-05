@@ -1,0 +1,26 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactButton from '../components/ContactButton.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import '../styles/interactions.css';
+const { page, home = false } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head><Head page={page} /></head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <Header home={home} />
+    <slot />
+    <Footer page={page} home={home} />
+    {home && <ContactButton />}
+    <ConsentBanner />
+    <script>
+      import '../scripts/consent.js';
+      import '../scripts/navigation.js';
+      import '../scripts/map.js';
+    </script>
+  </body>
+</html>

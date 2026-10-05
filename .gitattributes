@@ -1,0 +1,11 @@
+src/** text eol=lf
+scripts/** text eol=lf
+.github/** text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+public/*.xml text eol=lf
+public/*.txt text eol=lf
+public/**/*.svg text eol=lf
+*.jpg binary
+*.png binary
+*.woff2 binary
