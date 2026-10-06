@@ -228,7 +228,8 @@
         "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20home%20visit%20massage%20%3A%29",
         "https://wa.me/351938132927",
         "https://wa.me/351938132927?text=Hi!%20I%20have%20a%20question%20%3A%29",
-        "https://shaanthawellness.com/privacy.html"
+        "https://shaanthawellness.com/privacy.html",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html"
       ],
       "photoCount": 10,
       "preservedParagraphs": [
@@ -252,9 +253,9 @@
         "“Amazing and super relaxing massage! She really listened and worked with me to actually tackle the areas that were giving me trouble.”",
         "A. B. (Alina) · read on google ↗",
         "A calm, beautiful wellness space in the heart of Sagres — shared with yoga, movement and healing practices.",
-        "Staying in an airbnb, villa or guesthouse? The massage table travels — home visits in and around Sagres. Same treatment, zero effort on your side.",
+        "Staying in an airbnb, villa or guesthouse? The massage table travels — home visits from Sagres to Lagos , travel included. Same treatment, zero effort on your side.",
         "Send a message on WhatsApp (+351 938 132 927) — we’ll find a time that works. Open every day, 8:00–20:00, by appointment.",
-        "At Mandala, a wellness space in the heart of Sagres — or at your place. Home visits cover Sagres and around; the massage table travels.",
+        "At Mandala, a wellness space in the heart of Sagres — or at your place. Home visits cover the whole coast from Sagres to Lagos , travel included in the price.",
         "If you’re not sure, start with the ayurvedic & sports combination — warm oils to open the tissue, deeper work exactly where you need it. Every treatment is tailored to you anyway.",
         "Yes — the sports massage and the ayurvedic & sports combination are exactly for that. Deep-tissue work on the shoulders, neck and lower back, right where surfing loads the body.",
         "Nothing special — just arrive as you are. Ayurvedic treatments use warm herbal oil, so plan to shower afterwards rather than rush to dinner.",
@@ -358,7 +359,8 @@
         "https://shaanthawellness.com/what-is-abhyanga.html",
         "https://wa.me/351938132927",
         "https://www.instagram.com/shaanthawellness/",
-        "https://shaanthawellness.com/privacy.html"
+        "https://shaanthawellness.com/privacy.html",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html"
       ],
       "photoCount": 0,
       "mainTextSha256": "1a4a39e68690ec2eaa4db345ad0c7e9523febbf0b9f74b18ca8488dff6978925"
@@ -440,7 +442,8 @@
         "https://shaanthawellness.com/about.html",
         "https://wa.me/351938132927",
         "https://www.instagram.com/shaanthawellness/",
-        "https://shaanthawellness.com/privacy.html"
+        "https://shaanthawellness.com/privacy.html",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html"
       ],
       "photoCount": 0,
       "mainTextSha256": "d02ec1d714b191072b95594c08c3d2f11da7c92da8a1d115c69ae8969a0d4bc7"
@@ -522,7 +525,8 @@
         "https://shaanthawellness.com/about.html",
         "https://wa.me/351938132927",
         "https://www.instagram.com/shaanthawellness/",
-        "https://shaanthawellness.com/privacy.html"
+        "https://shaanthawellness.com/privacy.html",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html"
       ],
       "photoCount": 0,
       "mainTextSha256": "dd98f14898b58a6a4d8ca57feb1b701da6ec44c2e32e032c5d8a1a9cc2a4bfbc"
@@ -551,22 +555,161 @@
         "https://shaanthawellness.com/index.html",
         "https://wa.me/351938132927",
         "https://wa.me/351938132927?text=Hi!%20I%20have%20a%20question%20about%20the%20privacy%20policy",
-        "https://www.instagram.com/shaanthawellness/"
+        "https://www.instagram.com/shaanthawellness/",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html"
       ],
       "photoCount": 0
+    },
+    {
+      "file": "massage-at-your-accommodation.html",
+      "route": "/massage-at-your-accommodation.html",
+      "title": "Massage at Your Accommodation — Sagres to Lagos | Shaantha",
+      "canonical": "https://shaanthawellness.com/massage-at-your-accommodation.html",
+      "lang": "en",
+      "metas": {
+        "charset": "utf-8",
+        "name:viewport": "width=device-width, initial-scale=1",
+        "name:theme-color": "#FBF6EF",
+        "name:description": "Ayurvedic and sports massage at your villa, Airbnb or guesthouse — anywhere between Sagres and Lagos. 60 min · 50€, travel included. Book on WhatsApp.",
+        "property:og:type": "article",
+        "property:og:url": "https://shaanthawellness.com/massage-at-your-accommodation.html",
+        "property:og:site_name": "Shaantha Wellness",
+        "property:og:title": "Massage at Your Accommodation, from Sagres to Lagos",
+        "property:og:description": "The massage table travels. Ayurvedic and sports massage at your villa, Airbnb or guesthouse — 60 min · 50€, travel included.",
+        "property:og:image": "https://shaanthawellness.com/photos/home.jpg",
+        "property:og:image:alt": "Massage table set up for a home visit, with a surfboard nearby",
+        "name:twitter:card": "summary_large_image",
+        "name:twitter:title": "Massage at Your Accommodation, from Sagres to Lagos",
+        "name:twitter:description": "The massage table travels. Ayurvedic and sports massage at your villa, Airbnb or guesthouse — 60 min · 50€, travel included.",
+        "name:twitter:image": "https://shaanthawellness.com/photos/home.jpg"
+      },
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Shaantha Wellness",
+              "item": "https://shaanthawellness.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Massage at your accommodation",
+              "item": "https://shaanthawellness.com/massage-at-your-accommodation.html"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Massage at your accommodation",
+          "serviceType": "In-home massage therapy",
+          "description": "Ayurvedic and sports massage delivered at the client's accommodation — villa, Airbnb, guesthouse or hotel — along the coast between Sagres and Lagos, Portugal. Travel is included in the treatment price.",
+          "provider": {
+            "@type": "HealthAndBeautyBusiness",
+            "@id": "https://shaanthawellness.com/#business",
+            "name": "Shaantha Wellness"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Sagres"
+            },
+            {
+              "@type": "City",
+              "name": "Vila do Bispo"
+            },
+            {
+              "@type": "City",
+              "name": "Raposeira"
+            },
+            {
+              "@type": "City",
+              "name": "Figueira"
+            },
+            {
+              "@type": "City",
+              "name": "Budens"
+            },
+            {
+              "@type": "City",
+              "name": "Salema"
+            },
+            {
+              "@type": "City",
+              "name": "Burgau"
+            },
+            {
+              "@type": "City",
+              "name": "Praia da Luz"
+            },
+            {
+              "@type": "City",
+              "name": "Lagos"
+            }
+          ],
+          "availableLanguage": [
+            "de",
+            "en",
+            "es",
+            "fr",
+            "pt"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "50",
+            "priceCurrency": "EUR",
+            "description": "60-minute treatment at your accommodation, travel included"
+          },
+          "@id": "https://shaanthawellness.com/massage-at-your-accommodation.html#service",
+          "url": "https://shaanthawellness.com/massage-at-your-accommodation.html"
+        }
+      ],
+      "h1": [
+        "Massage at your accommodation, from Sagres to Lagos"
+      ],
+      "preservedIds": [
+        "main-content",
+        "cookie-settings-link"
+      ],
+      "preservedLinks": [
+        "https://shaanthawellness.com/index.html",
+        "https://shaanthawellness.com/index.html#visit",
+        "https://shaanthawellness.com/what-is-abhyanga.html",
+        "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+        "https://www.casadosamigos.net/en",
+        "https://shaanthawellness.com/index.html#pass",
+        "https://shaanthawellness.com/about.html",
+        "https://wa.me/351938132927?text=Hi%20Tabea!%20I%27d%20like%20to%20book%20a%20massage%20at%20my%20accommodation%20%3A%29",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html",
+        "https://wa.me/351938132927",
+        "https://www.instagram.com/shaanthawellness/",
+        "https://shaanthawellness.com/privacy.html",
+        "https://shaanthawellness.com/massage-at-your-accommodation.html#"
+      ],
+      "photoCount": 0,
+      "mainTextSha256": "e864d8f0e72c0db270e34532a8b179aa8dab7bdc9700e6a7496790e4642a4ccb"
     }
   ],
   "sitemap": [
     "https://shaanthawellness.com/",
     "https://shaanthawellness.com/about.html",
     "https://shaanthawellness.com/what-is-abhyanga.html",
-    "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html"
+    "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html",
+    "https://shaanthawellness.com/massage-at-your-accommodation.html"
   ],
   "robots": "User-agent: *\nAllow: /\n\nSitemap: https://shaanthawellness.com/sitemap.xml",
   "approvedRevisions": [
     {
       "date": "2026-10-06",
       "change": "Larger reading text and local location screenshot instead of Google Maps iframe"
+    },
+    {
+      "date": "2026-10-06",
+      "change": "Requested publication of home-visits page; add internal links and sitemap entry; discuss treatment focus in person instead of requesting health data on WhatsApp"
     }
   ],
   "publicAliasHashes": {

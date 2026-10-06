@@ -295,7 +295,7 @@ async function run() {
   if (!fileSet.has('robots.txt') || (await readText('robots.txt')).replace(/\r/g, '').trim() !== contract.robots.trim()) fail('robots', 'Published robots.txt changed');
   const sitemap = fileSet.has('sitemap.xml') ? await readText('sitemap.xml') : '';
   const locations = [...sitemap.matchAll(/<loc\b[^>]*>([\s\S]*?)<\/loc>/gi)].map((match) => decodeEntities(match[1].trim()));
-  if (!equal(locations.slice().sort(), contract.sitemap.slice().sort())) fail('sitemap', 'Sitemap must contain exactly the four existing public URLs');
+  if (!equal(locations.slice().sort(), contract.sitemap.slice().sort())) fail('sitemap', 'Sitemap must contain exactly the approved indexable URLs');
   for (const location of locations) await checkReference(location, 'sitemap.xml');
 
   const permittedRootFiles = new Set([...contract.pages.map((page) => page.file), 'CNAME', '.nojekyll', 'robots.txt', 'sitemap.xml', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'favicon.svg']);
