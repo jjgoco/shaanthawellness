@@ -41,3 +41,17 @@ import '../styles/article.css';
   </div>
 </main>
 </SiteLayout>
+
+<style is:global>
+  /* Match the primary font's character width while it downloads. */
+  @font-face {
+    font-family: "Cormorant Accommodation Fallback";
+    src: local("Times New Roman"), local("Times"), local("Liberation Serif");
+    font-style: normal;
+    font-weight: 400 600;
+    size-adjust: 95.4%;
+  }
+  :root {
+    --font-heading: "Cormorant Garamond", "Cormorant Accommodation Fallback", Baskerville, Georgia, serif;
+  }
+</style>
