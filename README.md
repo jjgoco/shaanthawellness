@@ -13,11 +13,11 @@ The source of the new site is `src/`; `public/` is an explicit allowlist of comp
 
 Readability revision (2026-10-06): reading text 18 px, card text 17 px and controls 16 px; display headings unchanged. The location map is a local screenshot, fully shown with Google attribution nearby and an external link. Its capture/provenance is recorded in `src/assets/location/README.md`. The page has no Maps iframe or Maps loading script; analytics consent remains required.
 
-`src/data/pages.json` defines titles, meta tags, canonicals, JSON-LD and page-specific footer links. Home and article layouts preserve their existing visual differences. Photos in `src/assets/photos` generate responsive AVIF/WebP at build time. Only established social/schema JPG URLs are copied directly into public output.
+`src/data/pages.json` defines titles, meta tags, canonicals, JSON-LD and page-specific footer links. Home and article layouts preserve their existing visual differences. Photos in `src/assets/photos` generate responsive AVIF/WebP at build time. All 18 historical /photos/ JPG, WebP, PNG and SVG URLs are preserved byte-for-byte for existing image links and indexing. Pages continue to load the responsive optimized assets; retaining historical files does not add them to the initial page requests. scripts/migration-contract.json lists and hashes these compatibility assets.
 
 ## Preview and release gate
 
-This branch is for local review. No deployment runs on push. `release-status.json` is deliberately unapproved. `npm run check:release` must fail until the owner has confirmed legal facts and the exact visual/legal/publication result is approved. Privacy remains noindex and excluded from the sitemap.
+This branch is for local review. No deployment runs on push. Visual and privacy text approvals are recorded; publication remains unapproved in `release-status.json`. `npm run check:release` must fail until the owner has confirmed legal facts and the exact visual/legal/publication result is approved. Privacy remains noindex and excluded from the sitemap.
 
 Worktree baseline: `ea296005b9c9add8991d1f6e4b421185628e98f1`. Unpublished local home/sitemap edits and the accommodation page are preserved outside this worktree under the parent project's `migration-review/pending`; they are not published or part of this migration.
 
@@ -27,7 +27,7 @@ Worktree baseline: `ea296005b9c9add8991d1f6e4b421185628e98f1`. Unpublished local
 2. Review the exact revision's visual and performance reports; set `release-status.json` approvals only on explicit human confirmation, with a date and the result of `node scripts/source-digest.mjs` in `approvedSourceSha256`. Any change to source, assets, dependencies, checks or workflows invalidates that approval. The status file itself is excluded to avoid a self-referential digest.
 3. Merge the reviewed branch into main, retaining current CNAME and DNS. Set GitHub Pages source to GitHub Actions and retain the existing custom domain and HTTPS.
 4. Run the manual **Publish approved Astro site** workflow on main with approval checked. It tests the build and release gate before uploading dist.
-5. Verify the five URLs, HTTP status, canonical/noindex/sitemap, assets, consent, Google Maps and WhatsApp in production. Confirm existing Search Console verification and inspect coverage/errors if access is available.
+5. Verify the five URLs, HTTP status, canonical/noindex/sitemap, assets, consent, Google Maps and WhatsApp in production. Compare coverage/errors with the saved Search Console baseline in the parent project (search-console-baseline-20261006). Domain ownership is verified through DNS; retain that verification.
 
 ## Restore the previous static site
 
