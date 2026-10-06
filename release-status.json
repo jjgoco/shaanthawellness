@@ -1,10 +1,14 @@
 {
   "visualApproved": true,
-  "legalApproved": false,
+  "legalApproved": true,
   "publicationApproved": false,
-  "ownerConfirmation": "User confirmed on 2026-10-06: Tabea Christiane Both, self-employed, Rua da Botelha 8650-359 Sagres Portugal, published WhatsApp contact; email omitted; standard WhatsApp only for appointments, health details discussed in consultation; agreed chat deletion 30 days after appointment or last message if unbooked, no WhatsApp backups declared; only Tabea accesses chats and manages appointments; GA event/user retention 14 months with activity reset; advertising personalization disabled; modeling contributions, recommendations and technical support retained by explicit choice; provider terms/certifications reviewed; aggregated historical reports retained while Analytics is used, approved; isolated real cookie test passed (_ga and _ga_56DW565S7C, 180 days, effective revocation); final owner review, implementation of agreed chat deletion and separate publication approval pending",
+  "ownerConfirmation": "User confirmed on 2026-10-06: Tabea Christiane Both, self-employed, Rua da Botelha 8650-359 Sagres Portugal, published WhatsApp contact; email omitted; standard WhatsApp only for appointments, health details discussed in consultation; agreed chat deletion 30 days after appointment or last message if unbooked, no WhatsApp backups declared; only Tabea accesses chats and manages appointments; GA event/user retention 14 months with activity reset; advertising personalization disabled; modeling contributions, recommendations and technical support retained by explicit choice; provider terms/certifications reviewed; aggregated historical reports retained while Analytics is used, approved; isolated real cookie test passed (_ga and _ga_56DW565S7C, 180 days, effective revocation); policy text approved explicitly on 2026-10-06 for revision 1cf1049; implementation of agreed chat deletion and separate publication approval pending",
   "approvedAt": null,
   "approvedSourceSha256": null,
   "visualApprovedAt": "2026-10-06",
-  "visualApprovedRevision": "288f510"
+  "visualApprovedRevision": "288f510",
+  "legalApprovedAt": "2026-10-06",
+  "legalApprovedRevision": "1cf1049",
+  "legalApprovalScope": "Website and appointment-contact privacy policy text; excludes certification of in-person treatments, tax and business activity",
+  "legalApprovedSourceSha256": "e5a63de1fb15f6f855bad076083c8a74a5ef308ba4522c8f28f8226a86ddeb5f"
 }
