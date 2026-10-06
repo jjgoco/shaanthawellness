@@ -34,6 +34,16 @@
 @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url("/assets/fonts/cormorant-garamond-italic-latin.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 
+/* Match Cormorant's zero-width metric (0.477 em) during font swap so the
+   52ch hero paragraph and heading keep their line count. No extra download. */
+@font-face {
+  font-family: "Cormorant Fallback";
+  src: local("Times New Roman"), local("Times"), local("Liberation Serif");
+  font-style: normal;
+  font-weight: 400 600;
+  size-adjust: 95.4%;
+}
+
 :root {
   --color-bg: #f5ead8;
   --color-surface: #ebddc5;
@@ -74,9 +84,9 @@
   --color-accent-2-800: #3d472b;
   --color-accent-2-900: #272e1b;
 
-  --font-heading: "Cormorant Garamond", Baskerville, Georgia, serif;
+  --font-heading: "Cormorant Garamond", "Cormorant Fallback", Baskerville, Georgia, serif;
   --font-heading-weight: 400;
-  --font-body: "Cormorant Garamond", Baskerville, Georgia, serif;
+  --font-body: "Cormorant Garamond", "Cormorant Fallback", Baskerville, Georgia, serif;
 
   --space-1: 4.4px;
   --space-2: 8.8px;
