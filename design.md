@@ -19,12 +19,12 @@ typography:
     letterSpacing: "-0.015em"
   home-body:
     fontFamily: '"Cormorant Garamond", Baskerville, Georgia, serif'
-    fontSize: "15px"
+    fontSize: "18px"
     fontWeight: 400
     lineHeight: 1.55
   article-body:
     fontFamily: '"Cormorant Garamond", Baskerville, Georgia, serif'
-    fontSize: "17px"
+    fontSize: "18px"
     lineHeight: 1.65
 rounded:
   sm: "8px"
@@ -41,6 +41,22 @@ spacing:
 ---
 
 # Contrato visual de Shaantha Wellness
+
+## Revisión de legibilidad · 2026-10-06
+
+El usuario aprobó la composición y pidió ampliar texto de lectura y controles. La tabla histórica posterior describe el punto de partida; estos valores sustituyen sus tamaños de lectura.
+
+| Before | After | Why |
+| --- | --- | --- |
+| Prosa 15–17 px | 18 px | Lectura cómoda en la misma Cormorant |
+| Tarjetas: cuerpo 13 px, título 17 px | 17 px, 22 px | Jerarquía clara y texto legible |
+| Botones 13–15 px | 16 px, altura mínima 44 px | Controles legibles y cómodos |
+| FAQ 19/15,5 px | 20/18 px | Distinguir pregunta y respuesta |
+| Pie 13 px y banner 15 px | 15 px y 17 px | Aumentar legibilidad secundaria |
+
+Mantener los titulares grandes. A 320 px el panel del pass usa max-width:100%; los campos pendientes de privacidad permiten overflow-wrap:anywhere.
+
+El mapa incrustado se sustituye por captura local auténtica de calles, completa, con logotipo y atribución Google legible junto al bloque. La imagen usa contain, conserva colores y abre Google Maps con un enlace externo. No hay script, iframe ni consentimiento de Maps. Fuente: src/assets/location/README.md.
 
 ## Overview
 
@@ -102,7 +118,7 @@ Conservar los binarios y la selección actual de fuente antes de cualquier optim
 
 [comprobado] Los títulos heredan `letter-spacing: -0.015em`. Muchos H1/H2 de portada ajustan `margin-left: -0.028em`. Los párrafos interiores tienen ancho máximo de 68ch, las listas 66ch. Se usa `text-wrap: pretty`.
 
-Mantener `font-display: swap` y las fuentes locales. Precargar solo la fuente normal crítica. No cambiar texto, tamaño o tracking para forzar resultados de Lighthouse; la distribución de líneas debe coincidir con la referencia en una misma pantalla.
+Mantener `font-display: swap` y las fuentes locales. Precargar solo la fuente normal crítica. No cambiar texto, escala de titulares o tracking para forzar resultados de Lighthouse. La revisión de legibilidad del 2026-10-06 aumenta prosa y controles; se permite su reflujo y se comprueba de nuevo.
 
 ## Layout
 

@@ -1,7 +1,7 @@
 const measurementId = 'G-56DW565S7C';
 const storageKey = 'shaantha-consent';
 const receiptKey = 'shaantha-consent-receipt';
-const policyVersion = '2026-10-05';
+const policyVersion = '2026-10-06';
 const banner = document.getElementById('cookie-banner');
 let choice;
 let initialized = false;

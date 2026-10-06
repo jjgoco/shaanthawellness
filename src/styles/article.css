@@ -30,7 +30,7 @@
 html { overflow-x: clip; }
 body {
   margin: 0; background: var(--color-bg); color: var(--color-text);
-  font-family: var(--font-heading); font-size: 17px; line-height: 1.65;
+  font-family: var(--font-heading); font-size: 18px; line-height: 1.65;
   text-wrap: pretty;
 }
 h1, h2, h3 {
@@ -53,17 +53,17 @@ nav.nav {
   max-width: 1200px; margin: 0 auto; padding: 22px clamp(20px, 5vw, 48px);
 }
 nav.nav img { height: 44px; width: auto; display: block; }
-nav.nav a.back { font-size: 15px; text-decoration: none; color: var(--color-text); }
+nav.nav a.back { font-size: 16px; text-decoration: none; color: var(--color-text); }
 nav.nav a.back:hover { color: var(--color-accent-700); }
 
 .kicker {
-  display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+  display: inline-block; font-size: 14px; font-weight: 600; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 14px;
 }
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
-  font-family: var(--font-heading); font-size: 15px; line-height: 1;
+  font-family: var(--font-heading); font-size: 16px; line-height: 1;
   padding: 13px 24px; border-radius: 999px; cursor: pointer;
 }
 .btn-primary { background: var(--color-accent); color: #FBF6EF; }
@@ -79,7 +79,10 @@ nav.nav a.back:hover { color: var(--color-accent-700); }
 
 footer {
   max-width: 1200px; margin: 60px auto 0; padding: 0 clamp(20px, 5vw, 48px) 56px;
-  font-size: 13px; color: var(--color-text); opacity: 0.8;
+  font-size: 15px; color: var(--color-text); opacity: 0.8;
   display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between;
 }
 footer a { color: inherit; }
+
+.btn { min-height: 44px; max-width: 100%; white-space: normal; }
+.privacy-notice { overflow-wrap: anywhere; }

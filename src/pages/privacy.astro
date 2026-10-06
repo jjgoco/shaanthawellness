@@ -3,7 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import '../styles/article.css';
 ---
 <SiteLayout page="privacy">
-<main id="main-content" tabindex="-1" class="wrap">
+<main id="main-content" tabindex="-1" class="wrap privacy-notice">
 <span class="kicker">Privacy</span>
 <h1>Privacy policy</h1>
 <p class="privacy-draft" role="note"><strong>Draft for owner review. Do not publish while any <code>[CONFIRM_…]</code> field remains.</strong> This wording describes the agreed migration once its behaviour has been tested; it is not a statement that the new implementation already passes those tests.</p>
@@ -23,10 +23,8 @@ import '../styles/article.css';
 <p>Analytics is provided by <strong>[CONFIRM_GOOGLE_ANALYTICS_CONTRACTING_ENTITY]</strong>. Its <code>_ga</code> cookie distinguishes visitors, and <code>_ga_&lt;measurement-id&gt;</code> stores session state. The website tag configures analytics cookies to expire after 180 days; their expiry may be renewed on a later visit while you continue to allow analytics. The cookie inventory must be confirmed as <strong>[CONFIRM_OBSERVED_ANALYTICS_COOKIE_INVENTORY]</strong> before publication. The website tag has advertising features and Google Signals disabled.</p>
 <p>The configured retention for user and event data in the Analytics account is <strong>[CONFIRM_GA_RETENTION_AND_ACTIVITY_RESET]</strong>; aggregated reporting is <strong>[CONFIRM_AGGREGATED_REPORT_RETENTION_CRITERION]</strong>. Those account settings have not yet been verified for this notice. Cookie expiry and the retention of data in the Analytics account are different settings.</p>
 <p>You can withdraw your consent through <strong>Cookie settings</strong> by choosing <strong>Reject</strong>. We stop further analytics collection and remove analytics cookies that our website can access. Withdrawing consent does not change the lawfulness of processing that took place before withdrawal. Contact us if you wish to request deletion of data already held. See <a href="https://support.google.com/analytics/answer/6004245?hl=en" target="_blank" rel="noopener noreferrer">Google's information about Analytics data</a>.</p>
-<h2>Optional Google Maps</h2>
-<p>The map remains unloaded until you choose <strong>Load Google Maps</strong>. This is a separate choice from accepting analytics. Loading it connects your browser to Google, which receives technical information such as your IP address and may use cookies. See <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>.</p>
-<p>Choose <strong>Hide map</strong> to remove the embedded map from this page. This stops the embedded map on the page; it cannot remove cookies stored on Google's own domains. You can manage those through your browser and Google's privacy controls. Your map-loading choice is not automatically carried into a later page visit. You can also use the external map link without loading the embedded map.</p>
-<p>[CONFIRM_MAPS_PROVIDER_ENTITY_COOKIE_INVENTORY_AND_TRANSFER_INFORMATION]</p>
+<h2>Location and external links</h2>
+<p>The location image is hosted with this website. Viewing it does not connect your browser to Google Maps or load an embedded map. Choosing <strong>Open in Google Maps</strong> takes you to Google's external website, where Google's <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer">privacy policy</a> applies.</p>
 <h2>Contacting us and making a booking</h2>
 <p>When you message us, we receive the details you send, such as your name, phone number, message and requested appointment. We use the information needed to reply, arrange your appointment and provide the service you request. The legal basis for those necessary steps is taking action at your request before a contract, or performing our contract with you.</p>
 <p>Providing contact and appointment details is your choice. If you do not provide the information needed for an appointment, we may be unable to reply or arrange it. We retain messages and booking records <strong>[CONFIRM_BOOKING_AND_MESSAGE_RETENTION_CRITERIA]</strong>. Where we must retain records by law, the applicable categories and periods are <strong>[CONFIRM_LEGAL_RECORDS_AND_PERIODS_OR_NOT_APPLICABLE]</strong>.</p>

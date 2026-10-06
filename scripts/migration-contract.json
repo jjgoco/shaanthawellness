@@ -202,7 +202,7 @@
         "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20a%20Sports%20massage%20%3A%29",
         "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Ayurvedic%20%26%20Sports%20combination%20%3A%29",
         "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Head%2C%20neck%20%26%20face%20treatment%20%3A%29",
-        "https://maps.google.com/maps?cid=0x62bd4a4eabf801c9:0x292733ea34f0e41f",
+        "https://www.google.com/maps?q=Mandala%20Life%20%26%20Yoga%20Sagres",
         "https://wa.me/351938132927?text=Hi!%20I%27d%20like%20to%20book%20a%20surf%20recovery%20massage%20%3A%29",
         "https://wa.me/351938132927?text=Hi!%20I%27m%20interested%20in%20the%20Recovery%20Pass%20%3A%29",
         "https://shaanthawellness.com/what-is-abhyanga.html",
@@ -215,7 +215,7 @@
         "https://wa.me/351938132927?text=Hi!%20I%20have%20a%20question%20%3A%29",
         "https://shaanthawellness.com/privacy.html"
       ],
-      "photoCount": 9,
+      "photoCount": 10,
       "preservedParagraphs": [
         "ayurvedic treatments with warm herbal oils and deep tissue sports massages for anyone looking for a well-deserved moment of relaxation.",
         "Traditional ayurvedic massage. Warm herbal oils that support circulation, nourish the skin, calm the nervous system and release muscular tension.",
@@ -547,5 +547,11 @@
     "https://shaanthawellness.com/what-is-abhyanga.html",
     "https://shaanthawellness.com/ayurvedic-vs-sports-massage.html"
   ],
-  "robots": "User-agent: *\nAllow: /\n\nSitemap: https://shaanthawellness.com/sitemap.xml"
+  "robots": "User-agent: *\nAllow: /\n\nSitemap: https://shaanthawellness.com/sitemap.xml",
+  "approvedRevisions": [
+    {
+      "date": "2026-10-06",
+      "change": "Larger reading text and local location screenshot instead of Google Maps iframe"
+    }
+  ]
 }

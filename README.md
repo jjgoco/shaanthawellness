@@ -11,6 +11,8 @@ npm run preview
 
 The source of the new site is `src/`; `public/` is an explicit allowlist of compatibility and brand assets. The original root HTML, assets and photos remain as the legacy reference; Astro does not publish them. Production must deploy **only `dist/`**.
 
+Readability revision (2026-10-06): reading text 18 px, card text 17 px and controls 16 px; display headings unchanged. The location map is a local screenshot, fully shown with Google attribution nearby and an external link. Its capture/provenance is recorded in `src/assets/location/README.md`. The page has no Maps iframe or Maps loading script; analytics consent remains required.
+
 `src/data/pages.json` defines titles, meta tags, canonicals, JSON-LD and page-specific footer links. Home and article layouts preserve their existing visual differences. Photos in `src/assets/photos` generate responsive AVIF/WebP at build time. Only established social/schema JPG URLs are copied directly into public output.
 
 ## Preview and release gate

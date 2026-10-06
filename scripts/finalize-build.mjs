@@ -9,9 +9,9 @@ let removed = 0;
 for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
   // Astro emits imported JPEG originals alongside transformed images. They are
   // build-generated and unused: page fallbacks are WebP; social aliases live in public/photos.
-  if (entry.isFile() && /\.(?:jpg|jpeg)$/i.test(entry.name)) {
+  if (entry.isFile() && (/\.(?:jpg|jpeg)$/i.test(entry.name) || /^mandala-location\..*\.png$/i.test(entry.name))) {
     fs.unlinkSync(path.join(directory, entry.name));
     removed++;
   }
 }
-console.log(`Finalized dist: removed ${removed} unused generated JPEG originals.`);
+console.log(`Finalized dist: removed ${removed} unused generated raster originals.`);
