@@ -288,6 +288,7 @@ async function run() {
     referenced.add(alias);
     if (!fileSet.has(alias)) fail('public-alias', `Published social/structured-data asset is missing: ${alias}`);
     else if (!(await stat(resolve(buildRoot, alias))).size) fail('public-alias', `Published asset is empty: ${alias}`);
+    else if (contract.publicAliasHashes?.[alias] && hash(await readFile(resolve(buildRoot, alias))) !== contract.publicAliasHashes[alias]) fail('public-alias-content', `Historical asset bytes changed: ${alias}`);
   }
   for (const name of ['CNAME', 'robots.txt', 'sitemap.xml']) referenced.add(name);
   if (!fileSet.has('CNAME') || (await readText('CNAME')).trim() !== site.hostname) fail('domain', 'CNAME must retain the current custom domain');

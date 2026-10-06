@@ -7,9 +7,24 @@
     "cssGzipBytes": 15000
   },
   "publicAliases": [
+    "photos/gal-1.jpg",
+    "photos/gal-1.webp",
+    "photos/gal-2.jpg",
+    "photos/gal-2.webp",
+    "photos/gal-3.jpg",
+    "photos/gal-3.webp",
+    "photos/gal-4.jpg",
+    "photos/gal-4.webp",
     "photos/hero.jpg",
+    "photos/hero.webp",
+    "photos/home.jpg",
+    "photos/home.webp",
+    "photos/logo.png",
+    "photos/logo.svg",
+    "photos/mandala.jpg",
+    "photos/mandala.webp",
     "photos/tabea.jpg",
-    "photos/logo.svg"
+    "photos/tabea.webp"
   ],
   "pages": [
     {
@@ -553,5 +568,25 @@
       "date": "2026-10-06",
       "change": "Larger reading text and local location screenshot instead of Google Maps iframe"
     }
-  ]
+  ],
+  "publicAliasHashes": {
+    "photos/gal-1.jpg": "8966d55b29fc4bfcd2899018b68da0993bfb5f8a6a149791c3dfb15440192081",
+    "photos/gal-1.webp": "a0b2f2f158a6666ad969afbc15d19f0fccf6b110024bdf22f1dbab4f911409d3",
+    "photos/gal-2.jpg": "51f839647e0ed6fc5be0ba743159a2c263437ac7d491352bb82e65af3054febf",
+    "photos/gal-2.webp": "01e70772c32839bfaec43b9dec49e014a97d783f30691edca3d1d8a6497b36f9",
+    "photos/gal-3.jpg": "3fbde1ffbea3de5e3cc73b1a61895007eeb9cb3aee8c84e3ed9ab07d03c1b12c",
+    "photos/gal-3.webp": "2006331ba92b99c00cbe86eb7a3a895d9319cc8a30ec28576838f78b55112371",
+    "photos/gal-4.jpg": "f50cf2e68725af582b057d5f4911f52d0c5169cec1cce9123280717e151986dc",
+    "photos/gal-4.webp": "3e339a87f7ff0a7d830b7e302e15263e3d925dd23ab76ccf70eb7f65c85f2e7f",
+    "photos/hero.jpg": "4dffaf5e96c9d7e912c2f99a1c4b00aa9395024db8018dcba9812835afc30ace",
+    "photos/hero.webp": "ffef442a6f9a9f12ad9b03eb6af5eaf1e29557059ec2adfe79264c3c08ed14f8",
+    "photos/home.jpg": "0b9cb370470c669a664aeb2fb968c7cc50e2601e05bc24e98337990d15da6c25",
+    "photos/home.webp": "3e2691ac4b53f4e4b9133db184f2b88bbd29ec516fe5ca0b112cf75522b702ec",
+    "photos/logo.png": "6c44a698b136361e9a99160cd27ea5cdafdc4e5a7d083e9a065a02b910932263",
+    "photos/logo.svg": "fae7b54c50dbea414300e1abf99b90e5b6e9443987cae5b83ca669129840ecbe",
+    "photos/mandala.jpg": "4ddac5a458c7aac69e14a98c131b96eead6b16d288a9e6662a0bd6c6581c0a46",
+    "photos/mandala.webp": "14cfb336ed5903f492c46c93d26a31ddf4e7206e3b8f1dcee9350f80bbff709a",
+    "photos/tabea.jpg": "173c27c455d7ea6a463b5face64e66755023e8017d8a10e59ec9920c9c9426b4",
+    "photos/tabea.webp": "e563a9300fed1f7cd4be4b9abe09e9f414605b43e244583886d059cccff6a23c"
+  }
 }
