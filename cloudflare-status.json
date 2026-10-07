@@ -4,5 +4,7 @@
   "productionApproved": false,
   "approvedSourceSha256": null,
   "approvedAt": null,
-  "authorization": "User selected the Workers Static Assets Free recommendation on 2026-10-07; prepare and validate a preview before requesting domain cutover approval. Account and accepted terms still pending."
+  "authorization": "User selected Workers Static Assets Free on 2026-10-07; preview prepared and validated. Account Workers Free verified in browser; no credentials created and no terms accepted by the agent. Domain cutover remains unapproved.",
+  "previewUrl": "https://shaantha-preview.jjgomezcorredor.workers.dev/",
+  "previewDeployment": "5f1f26b1"
 }
