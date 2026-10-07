@@ -21,6 +21,8 @@ const hide = () => {
   if (banner.contains(document.activeElement)) settingsTrigger?.focus();
 };
 const loadAnalytics = () => {
+  // Keep Cloudflare test hosts out of the live Analytics property.
+  if (location.hostname.endsWith('.workers.dev')) return;
   if (initialized || choice !== 'granted') return;
   initialized = true;
   window[`ga-disable-${measurementId}`] = false;

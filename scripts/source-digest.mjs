@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export function sourceDigest() {
-  const files = ['package.json', 'package-lock.json', 'astro.config.mjs', '.nvmrc', '.gitattributes'];
+  const files = ['package.json', 'package-lock.json', 'astro.config.mjs', '.nvmrc', '.gitattributes', 'wrangler-preview.json', 'wrangler-production.json'];
   const walk = (directory, prefix) => {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
       const relative = `${prefix}/${entry.name}`;
